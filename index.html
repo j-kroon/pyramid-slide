@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Pyramid Slide</h1>
+
+    <div class="main">
+      <div class="sub1">
+        <table>
+          <tr>
+            <td>
+              Brick Symbol:
+            </td>
+            <td>
+              <select id="symbol" >
+                <option value="#">#</option>
+                <option value="@">@</option>
+                <option value="X">X</option>
+                <option value="$">$</option>
+              </select>
+            </td>
+            <td><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+            <td>
+              <form id="draw-form">
+                  <label>
+                      How high?
+                      <input type="range" id="height" name='input' min="1" max="20" value="1"/>
+
+                      <label class="error-message">
+                          <!-- If there was a user error, we will put a message in here -->
+                      </label>
+                  </label>
+              </form>
+            </td>
+            <td>
+              <p name='output' id="outputid"></p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      
+
+      <div class="sub2" id="pyramid">
+
+      </div>
+    </div>
+
+
+    <script src="mario.js"></script>
+</body>
+</html>
