@@ -8,7 +8,7 @@ var symbolElem = document.getElementById("symbol");
 
 formElem.addEventListener("input", buildPage, true);
 symbolElem.addEventListener("change", buildPage, true);
-
+window.addEventListener("load", buildPage, true);
 
 function buildPage(event) {
   // This is used to intercept the form submission
